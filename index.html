@@ -4,17 +4,46 @@
   <title>Пример подключения плеера</title>
   <link rel="stylesheet" href="font-awesome.min.css">
   <meta charset="utf-8">
+  <style>
+    #player {
+      width: 800px;
+      height: 600px;
+    }
+
+    .js-video-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .player-controls {
+      background-color: black;
+      width: 800px;
+      height: 21px;
+    }
+
+    .player-button {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+      color: white;
+    }
+
+    .player-button i {
+      width: 13px;
+      height: 13px;
+    }
+  </style>
 </head>
 <body>
-  <div id="player" style="width: 800px; height: 600px;">
-    <div class="js-video-container" style="width: 100%; height: 100%"></div>
+  <div id="player">
+    <div class="js-video-container"></div>
     <!-- Here can be placed player controls: play and volume buttons -->
-    <div style="background-color: black; width: 800px; height: 21px;">
-      <button class="js-play-button" style="border: none; background-color: transparent; cursor: pointer; color: white;">
-        <i style="width: 13px; height: 13px" class="fa fa-play" aria-hidden="true"></i>
+    <div class="player-controls">
+      <button class="js-play-button player-button">
+        <i class="fa fa-play" aria-hidden="true"></i>
       </button>
-      <button class="js-pause-button" hidden style="border: none; background-color: transparent; cursor: pointer; color: white;">
-        <i style="width: 13px; height: 13px" class="fa fa-pause" aria-hidden="true"></i>
+      <button class="js-pause-button player-button" hidden>
+        <i class="fa fa-pause" aria-hidden="true"></i>
       </button>
     </div>
   </div>
