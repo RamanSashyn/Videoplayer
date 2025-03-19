@@ -1,0 +1,8 @@
+.env
+.idea/
+*.iml
+*.swp
+*.swo
+*.vscode/
+*.log
+.cache/
