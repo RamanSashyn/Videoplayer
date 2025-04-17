@@ -47,6 +47,16 @@
       padding: 0 10px;
       height: 41px;
     }
+
+    .custom-slider-thumb {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: red;
+      border: 3px solid white;
+      box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+    }
+
   </style>
 </head>
 <body>
@@ -68,6 +78,9 @@
       </button>
       <div class="player-time" style="display: flex; align-items: center; width: 100%; padding: 0 12px; height: 40px;">
         <span class="js-current-time" style="min-width: 50px;">0:00</span>
+        <div style="background-color: black; padding: 40px;">
+            <div class="custom-slider-thumb"></div>
+        </div>
         <div class="js-progress" style="
           background-color: #3c3c3c;
           flex-grow: 1;
