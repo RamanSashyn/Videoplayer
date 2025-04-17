@@ -49,12 +49,16 @@
     }
 
     .custom-slider-thumb {
-      width: 7px;
-      height: 7px;
+      position: relative;
+      top: 50%;
+      width: 8px;
+      height: 8px;
       border-radius: 50%;
       background-color: red;
       border: 3px solid white;
       box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+      margin-left: -6px;
+      z-index: 1;
     }
 
   </style>
@@ -78,20 +82,18 @@
       </button>
       <div class="player-time" style="display: flex; align-items: center; width: 100%; padding: 0 12px; height: 40px;">
         <span class="js-current-time" style="min-width: 50px;">0:00</span>
-        <div style="background-color: black; padding: 40px;">
-            <div class="custom-slider-thumb"></div>
-        </div>
         <div class="js-progress" style="
-          background-color: #3c3c3c;
+          background-color: black;
           flex-grow: 1;
           height: 6px;
           margin: 0 14px;
           border-radius: 3px;
-          overflow: hidden;
+          overflow: visible;
           display: flex;
           align-items: center;
           position: relative;
           top: 0;
+          padding: 6px 0;
         ">
           <div class="js-progress-slider" style="
             background-color: #ff0000;
@@ -99,6 +101,7 @@
             height: 100%;
             border-radius: 3px;
           "></div>
+          <div class="custom-slider-thumb"></div>
         </div>
         <span class="js-duration" style="min-width: 50px; text-align: right;">0:00</span>
       </div>
