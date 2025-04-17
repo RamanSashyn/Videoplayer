@@ -66,9 +66,28 @@
       <button class="js-mute-button player-button" hidden aria-label="Volume Up">
         <i class="fa fa-volume-up" aria-hidden="true"></i>
       </button>
-      <div class="player-time">
-        <span class="js-current-time">0:00</span>
-        <span class="js-duration">0:00</span>
+      <div class="player-time" style="display: flex; align-items: center; width: 100%; padding: 0 12px; height: 40px;">
+        <span class="js-current-time" style="min-width: 50px;">0:00</span>
+        <div class="js-progress" style="
+          background-color: #3c3c3c;
+          flex-grow: 1;
+          height: 6px;
+          margin: 0 14px;
+          border-radius: 3px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          position: relative;
+          top: 0;
+        ">
+          <div class="js-progress-slider" style="
+            background-color: #ff0000;
+            width: 0%;
+            height: 100%;
+            border-radius: 3px;
+          "></div>
+        </div>
+        <span class="js-duration" style="min-width: 50px; text-align: right;">0:00</span>
       </div>
       <div class="video-container"></div>
       <button class="js-fullscreen-button player-button" aria-label="Fullscreen">
