@@ -54,7 +54,7 @@
       height: 41px;
     }
 
-    .js-progress {
+    .progress {
       background-color: black;
       flex-grow: 1;
       height: 6px;
@@ -67,7 +67,7 @@
       padding: 6px 0;
     }
 
-    .js-progress-slider {
+    .progress-slider {
       background-color: #ff0000;
       width: 0%;
       height: 100%;
@@ -95,12 +95,12 @@
       transition-timing-function: ease-in;
     }
 
-    .js-current-time,
-    .js-duration {
+    .time-current,
+    .time-duration {
       min-width: 50px;
     }
 
-    .js-duration {
+    .time-duration {
       text-align: right;
     }
 
@@ -136,7 +136,7 @@
       </button>
 
       <div class="player-time">
-        <span class="js-current-time">0:00</span>
+        <span class=" time-current js-current-time">0:00</span>
 
         <div class="progress js-progress">
           <div class="progress-slider js-progress-slider">
@@ -144,7 +144,7 @@
           </div>
         </div>
 
-        <span class="js-duration">0:00</span>
+        <span class="time_duration js-duration">0:00</span>
       </div>
 
       <div class="video-container"></div>
