@@ -84,6 +84,9 @@
       z-index: 2;
       pointer-events: none;
       opacity: 0;
+      transition-property: opacity, background-color;
+      transition-duration: 300ms;
+      transition-timing-function: ease-in;
     }
 
     .js-current-time,
@@ -98,6 +101,7 @@
     .js-progress:hover .custom-slider-thumb {
       background-color: blue;
       opacity: 1;
+      transition-timing-function: ease-out;
     }
 
   </style>
