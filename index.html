@@ -6,7 +6,14 @@
   <meta charset="utf-8">
   <link rel="icon" href="lenna.jpg" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <style>
+    body {
+      margin: 0;
+      padding-left: 8px;
+      padding-top: 8px;
+    }
+
     .player-container {
       display: flex;
       flex-direction: column;
@@ -22,7 +29,6 @@
     .player-controls {
       background-color: black;
       display: flex;
-
       height: 40px;
     }
 
@@ -98,10 +104,15 @@
       text-align: right;
     }
 
-    .js-progress:hover .custom-slider-thumb {
+    .progress:hover .custom-slider-thumb {
       background-color: blue;
       opacity: 1;
       transition-timing-function: ease-out;
+    }
+
+    .player-button:focus {
+      outline: none;
+      box-shadow: none;
     }
 
   </style>
@@ -127,8 +138,8 @@
       <div class="player-time">
         <span class="js-current-time">0:00</span>
 
-        <div class="js-progress">
-          <div class="js-progress-slider">
+        <div class="progress js-progress">
+          <div class="progress-slider js-progress-slider">
             <div class="custom-slider-thumb"></div>
           </div>
         </div>
