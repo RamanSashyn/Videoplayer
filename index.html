@@ -46,7 +46,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      width: 100%;
+      flex-grow: 1;
       color: white;
       font-size: 16px;
       font-family: 'Roboto', sans-serif;
@@ -95,13 +95,13 @@
       transition-timing-function: ease-in;
     }
 
-    .time-current,
-    .time-duration {
+    .time-current {
       min-width: 50px;
     }
 
     .time-duration {
       text-align: right;
+      min-width: 50px;
     }
 
     .progress:hover .custom-slider-thumb {
@@ -136,18 +136,15 @@
       </button>
 
       <div class="player-time">
-        <span class=" time-current js-current-time">0:00</span>
-
+        <span class="time-current js-current-time">0:00</span>
         <div class="progress js-progress">
           <div class="progress-slider js-progress-slider">
             <div class="custom-slider-thumb"></div>
           </div>
         </div>
-
-        <span class="time_duration js-duration">0:00</span>
+        <span class="time-duration js-duration">0:00</span>
       </div>
 
-      <div class="video-container"></div>
       <button class="js-fullscreen-button player-button" aria-label="Fullscreen">
         <i class="fa fa-expand" aria-hidden="true"></i>
       </button>
